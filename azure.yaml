@@ -26,5 +26,3 @@ jobs:
     steps:
       - script: 
         echo "Selected browser= $(BROWSER)"
-
-      # Rest of your test steps go here...
