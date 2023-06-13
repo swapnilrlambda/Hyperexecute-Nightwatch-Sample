@@ -21,7 +21,7 @@ pre:
 matrix:
   os: [win]
   version: ["latest"]
-  browser: ["chrome","firefox","edge"]
+  browser: [${},"firefox","edge"]
   platform: ["win10"]
 
 testSuites:

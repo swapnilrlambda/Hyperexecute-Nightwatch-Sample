@@ -16,15 +16,16 @@ cacheDirectories:
 
 pre:
   - npm install
+  - echo ${browser}
 
 
 matrix:
   os: [linux]
   version: ["latest"]
-  browser: ["chrome","firefox","edge"]
+  # browser: []
   platform: ["win10"]
 
 testSuites:
-  - ./node_modules/.bin/nightwatch -e $browser
+  - ./node_modules/.bin/nightwatch -e ${browser}
     
   
