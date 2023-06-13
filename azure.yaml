@@ -24,7 +24,8 @@ jobs:
         value: ${{ parameters.browser }}
 
     steps:
-      - script: echo "Selected browser: $(BROWSER)"
+      - script: 
+        echo "Selected browser= $(BROWSER)"
         displayName: Display selected browser
 
       # Rest of your test steps go here...
