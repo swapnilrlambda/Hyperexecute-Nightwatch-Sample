@@ -24,5 +24,5 @@ jobs:
         value: ${{ parameters.browser }}
 
     steps:
-      - script: 
-        echo "Selected browser= $(BROWSER)"
+      - script: |
+          echo "Selected browser= $(BROWSER)"
