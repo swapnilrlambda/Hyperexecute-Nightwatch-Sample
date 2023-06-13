@@ -17,6 +17,8 @@ cacheDirectories:
 pre:
   - npm install
   - echo ${browser}
+  - echo ${storeType}
+  - echo ${storeId}
 
 
 matrix:
