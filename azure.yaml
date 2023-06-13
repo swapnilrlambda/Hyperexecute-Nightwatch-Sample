@@ -54,6 +54,10 @@ jobs:
     variables:
       - name: BROWSER
         value: ${{ parameters.browser }}
+      - name: storeId
+        value: ${{ parameters.storeId }}      
+      - name: storeType
+        value: ${{ parameters.storeType }}      
       - name: LT_USERNAME
         value: swapnilr
       - name: LT_ACCESS_KEY
@@ -61,7 +65,7 @@ jobs:
       - name: grep
         value:
       - name: locale
-        value: es-us
+        value: en-us
       - name: grepTags
         value: -NonUS
 
