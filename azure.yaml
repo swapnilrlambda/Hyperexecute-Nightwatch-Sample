@@ -1,0 +1,30 @@
+trigger:
+  branches:
+    include:
+      - main
+
+parameters:
+  - name: browser
+    displayName: Browser selection
+    type: string
+    default: 'chrome'
+    values:
+      - chrome
+      - firefox
+      - edge
+
+jobs:
+  - job: Test
+    displayName: Run Tests
+    pool:
+      vmImage: 'ubuntu-latest'
+
+    variables:
+      - name: BROWSER
+        value: ${{ parameters.browser }}
+
+    steps:
+      - script: echo "Selected browser: $(BROWSER)"
+        displayName: Display selected browser
+
+      # Rest of your test steps go here...
