@@ -26,6 +26,6 @@ matrix:
   platform: ["win10"]
 
 testSuites:
-  - ./node_modules/.bin/nightwatch -e ${browser}
+  - ./node_modules/.bin/nightwatch -e ${browser},configFile=${configFile},grep=${grep},grepTags=${grepTags},storeType=${storeType},storeId=${storeId}
     
   
